@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from 'firebase/auth';
-// import PropTypes from 'prop-types';
 import { createContext, useEffect, useState } from 'react';
 import auth from '../firebase/firebase.config';
 
@@ -76,7 +75,3 @@ const AuthProvider = ({ children }) => {
 };
 
 export default AuthProvider;
-
-// AuthProvider.propTypes = {
-//     children: PropTypes.object,
-// }

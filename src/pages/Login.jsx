@@ -20,6 +20,7 @@ const Login = () => {
         loginUser(email, password)
         .then(result => {
             console.log(result.user)
+            navigate('/')
             toast.success('login successfully')
         })
         .then(error => {
